@@ -23,13 +23,22 @@
         h1, h2 {
             color: #333;
         }
-        .header, .section {
+        .header {
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
         }
-        .header {
-            text-align: center;
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
         }
-        .header h1 {
+        .header-content {
+            flex: 1;
+        }
+        .header-content h1 {
             margin-bottom: 10px;
         }
         a {
@@ -44,8 +53,11 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Muhammad Hassaan Adil</h1>
-            <p>Lahore, Punjab | <a href="tel:+923334235504">+92 3334235504</a> | <a href="mailto:hassaanadil488@gmail.com">hassaanadil488@gmail.com</a></p>
+            <img src="me2.jpeg" alt="Muhammad Hassaan Adil" class="profile-pic">
+            <div class="header-content">
+                <h1>Muhammad Hassaan Adil</h1>
+                <p>Lahore, Punjab | <a href="tel:+923334235504">+92 3334235504</a> | <a href="mailto:hassaanadil488@gmail.com">hassaanadil488@gmail.com</a></p>
+            </div>
         </div>
         
         <div class="section">
